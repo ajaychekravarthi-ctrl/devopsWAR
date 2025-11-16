@@ -10,13 +10,19 @@
     <version>1.0.0</version>
     <packaging>war</packaging>
 
-    <name>Simple Web App</name>
+    <dependencies>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>4.0.1</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
 
     <build>
         <finalName>webapp-demo</finalName>
 
         <plugins>
-            <!-- For compiling Java 8 / 11 / 17 -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -27,7 +33,6 @@
                 </configuration>
             </plugin>
 
-            <!-- WAR Packaging -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-war-plugin</artifactId>
