@@ -10,6 +10,6 @@ public class HelloServlet extends HttpServlet {
             throws ServletException, IOException {
 
         resp.setContentType("text/html");
-        resp.getWriter().println("<h2>Hello from ajey WAR deployed in Tomcat!</h2>");
+        resp.getWriter().println("<h2>SRE transform</h2>");
     }
 }
